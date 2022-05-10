@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard">10dp</dimen>
+    <dimen name="mainCardH">100dp</dimen>
+    <dimen name="mainCardW">100dp</dimen>
+    <dimen name="playCardH">100dp</dimen>
+    <dimen name="playCardW">70dp</dimen>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="standardSpace">
+        <item name="android:padding">@dimen/standard</item>
+        <item name="android:layout_margin">@dimen/standard</item>
+    </style>
+
+    <style name="mainCard" parent="standardSpace">
+        <item name="android:text">@string/playButton</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:layout_width">@dimen/mainCardW</item>
+        <item name="android:layout_height">@dimen/mainCardH</item>
+    </style>
+
+</resources>

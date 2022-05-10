@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_view"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconTint="@color/black"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        android:text="@string/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_frameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_actionBar" />
+
+    <TextView
+        android:id="@+id/text_actionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_frameLayout"
+        app:layout_constraintLeft_toRightOf="@id/backButton"
+        app:layout_constraintRight_toLeftOf="@id/settingsButton"
+        style="@style/standardSpace"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconTint="@color/black"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_baseline_settings_24"
+        app:iconGravity="end"
+        android:text="@string/settings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_frameLayout"
+        app:layout_constraintLeft_toRightOf="@id/text_actionBar"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/layout_frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_actionBar"
+        style="@style/standardSpace"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

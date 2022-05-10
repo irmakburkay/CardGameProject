@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_mainPage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainPageFragment"
+    android:layout_gravity="center"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+</GridLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Card Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="playButton">Play</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="back">Back</string>
+    <string name="settings">Settings</string>
+    <string name="appSettings">App Settings</string>
+    <string name="musicTitle">Music</string>
+    <string name="musicSummary">Set music level</string>
+    <string name="effectTitle">Effect</string>
+    <string name="effectSummary">Set effect level</string>
+    <string name="languageTitle">Language</string>
+    <string name="languageSummary">Set Game Language</string>
+    <string name="themeTitle">Theme</string>
+    <string name="themeSummary">Set game theme</string>
+    <string name="systemDefault">System Default</string>
+    <string name="english">English</string>
+    <string name="turkish">Turkish</string>
+    <string name="darkTheme">Dark Theme</string>
+    <string name="lightTheme">Light Theme</string>
+    <string name="scoreSettings">Score Settings</string>
+    <string name="clearSummary">Click toggle to clear scores</string>
+    <string name="clearTitle">Clear Scores</string>
+    <string name="scoresCleared">Scores Cleared</string>
+    <string name="timesUp">Time\'s Up!</string>
+    <string name="totalScore">Total Score</string>
+    <string name="save">Save</string>
+    <string name="playAgain">Play Again</string>
+    <string name="exit">Exit</string>
+    <string name="time">Time</string>
+    <string name="score">Score</string>
+    <string name="invalidAlias">Invalid Alias!</string>
+    <string name="alias">Alias</string>
+    <string name="pc">Computer</string>
+    <string name="school">School</string>
+    <string name="tools">Tools</string>
+    <string name="cardThemeSummary">Set card theme</string>
+    <string name="cardThemeTitle">Card Theme</string>
+    <string name="scoreSummary">Click toggle to list scores</string>
+    <string name="scoreTitle">Scores</string>
+    <string name="restart">Restart</string>
+    <string name="snackbarText">Restart is required</string>
+
+</resources>

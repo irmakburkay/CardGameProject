@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tr.edu.duzce.mf.bm.cardgame">
+
+    <uses-sdk
+        android:maxSdkVersion="31"
+        android:minSdkVersion="29"
+        android:targetSdkVersion="31" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CardGame.Launcher">
+        <activity
+            android:name="tr.edu.duzce.mf.bm.cardgame.SettingsPopActivity"
+            android:theme="@style/Theme.CardGame.SettingsPop"
+            android:exported="false" />
+        <activity
+            android:name="tr.edu.duzce.mf.bm.cardgame.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ScoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nicknameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/standardSpace"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/scoreLayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nicknameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/alias"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/scoreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/standardSpace"
+        app:layout_constraintTop_toBottomOf="@id/nicknameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/scoreWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/score"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconTint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/scoreLayout"
+        app:layout_constraintRight_toRightOf="@id/scoreLayout"
+        android:text="@string/save"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

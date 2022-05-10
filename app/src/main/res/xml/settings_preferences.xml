@@ -1,0 +1,88 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        app:title="@string/appSettings"
+        app:icon="@drawable/ic_baseline_settings_24">
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="pref_music_state"
+            app:summary="@string/musicSummary"
+            app:title="@string/musicTitle"
+            />
+
+        <SeekBarPreference
+            app:dependency="pref_music_state"
+            app:key="pref_music_value"
+            app:defaultValue="50"
+            android:max="100"
+            android:min="0"
+            />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="pref_fx_state"
+            app:summary="@string/effectSummary"
+            app:title="@string/effectTitle"
+            />
+
+        <SeekBarPreference
+            app:dependency="pref_fx_state"
+            app:key="pref_fx_value"
+            app:defaultValue="50"
+            android:max="100"
+            android:min="0"
+            />
+
+        <ListPreference
+            app:defaultValue="1"
+            app:key="pref_language"
+            app:entries="@array/language"
+            app:entryValues="@array/language_values"
+            app:summary="@string/languageSummary"
+            app:title="@string/languageTitle"
+            />
+
+        <ListPreference
+            app:defaultValue="1"
+            app:key="pref_theme"
+            app:entries="@array/theme"
+            app:entryValues="@array/theme_values"
+            app:summary="@string/themeSummary"
+            app:title="@string/themeTitle"
+            />
+
+        <ListPreference
+            app:defaultValue="1"
+            app:key="pref_card_theme"
+            app:entries="@array/cardTheme"
+            app:entryValues="@array/cardTheme_values"
+            app:summary="@string/cardThemeSummary"
+            app:title="@string/cardThemeTitle"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/scoreSettings"
+        app:icon="@drawable/ic_baseline_wine_bar_24">
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="pref_clear_database"
+            app:summary="@string/clearSummary"
+            app:title="@string/clearTitle"
+            />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="pref_scores"
+            app:summary="@string/scoreSummary"
+            app:title="@string/scoreTitle"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

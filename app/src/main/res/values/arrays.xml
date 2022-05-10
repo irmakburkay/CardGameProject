@@ -1,0 +1,35 @@
+<resources>
+
+    <string-array name="language">
+        <item>@string/english</item>
+        <item>@string/turkish</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="theme">
+        <item>@string/darkTheme</item>
+        <item>@string/lightTheme</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="cardTheme">
+        <item>@string/pc</item>
+        <item>@string/school</item>
+        <item>@string/tools</item>
+    </string-array>
+
+    <string-array name="cardTheme_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

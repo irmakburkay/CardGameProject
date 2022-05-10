@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kart Oyunu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Merhaba boş fragment</string>
+
+    <string name="playButton">Oyna</string>
+    <string name="easy">Kolay</string>
+    <string name="medium">Orta</string>
+    <string name="hard">Zor</string>
+    <string name="back">Geri</string>
+    <string name="settings">Ayarlar</string>
+    <string name="appSettings">Uygulama Ayarları</string>
+    <string name="musicTitle">Müzik</string>
+    <string name="musicSummary">Müzik seviyesini ayarla</string>
+    <string name="effectTitle">Efekt</string>
+    <string name="effectSummary">Efekt seviyesini ayarla</string>
+    <string name="languageTitle">Dil</string>
+    <string name="languageSummary">Oyun dilini ayarla</string>
+    <string name="themeTitle">Tema</string>
+    <string name="themeSummary">Oyun temasını ayarla</string>
+    <string name="systemDefault">Sistem Varsayılanı</string>
+    <string name="english">İngilizce</string>
+    <string name="turkish">Türkçe</string>
+    <string name="darkTheme">Koyu Tema</string>
+    <string name="lightTheme">Açık Tema</string>
+    <string name="scoreSettings">Skor Ayarları</string>
+    <string name="clearSummary">Skorları temizleme için tuşa basın</string>
+    <string name="clearTitle">Skorları Temizle</string>
+    <string name="scoresCleared">Skor Temizlendi</string>
+    <string name="timesUp">Süre Doldu!</string>
+    <string name="totalScore">Toplam Skor</string>
+    <string name="save">Kaydet</string>
+    <string name="playAgain">Tekrar Oyna</string>
+    <string name="exit">Çıkış</string>
+    <string name="time">Süre</string>
+    <string name="score">Skor</string>
+    <string name="invalidAlias">Geçersiz Rumuz!</string>
+    <string name="alias">Rumuz</string>
+    <string name="pc">Bilgisayar</string>
+    <string name="school">Okul</string>
+    <string name="tools">Araç Gereç</string>
+    <string name="cardThemeTitle">Kart Teması</string>
+    <string name="cardThemeSummary">Kart temasını ayarla</string>
+    <string name="scoreSummary">Skorları listelemek için tuşa basın</string>
+    <string name="scoreTitle">Skorlar</string>
+    <string name="restart">Tekrar Başlat</string>
+    <string name="snackbarText">Yeniden başlatma gerekli</string>
+
+</resources>
