@@ -40,7 +40,6 @@ public class ScoreTableRecyclerAdapter extends RecyclerView.Adapter<ScoreTableRe
         ScoreTable scoreTable = scoreTableList.get(position);
         holder.nicknameTextView.setText(scoreTable.getNickname());
         holder.pointTextView.setText(String.valueOf(scoreTable.getScore()));
-        //holder.data = scoreTable;
     }
 
     @Override

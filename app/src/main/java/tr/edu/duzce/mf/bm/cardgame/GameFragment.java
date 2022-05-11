@@ -1,6 +1,5 @@
 package tr.edu.duzce.mf.bm.cardgame;
 
-import static android.content.ContentValues.TAG;
 
 import android.app.AlertDialog;
 import android.graphics.drawable.Drawable;
@@ -10,19 +9,14 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import android.os.CountDownTimer;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
 
 
 public class GameFragment extends Fragment implements  View.OnClickListener{
@@ -68,11 +62,7 @@ public class GameFragment extends Fragment implements  View.OnClickListener{
 
         InitComponents();
 
-        try {
-            createCard(row * column);
-        }catch (Exception e){
-            Log.e("nedenaq", "onCreateView: " + e.getLocalizedMessage() );
-        }
+        createCard(row * column);
 
         return view;
     }

@@ -6,10 +6,6 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.widget.ImageView;
 
-import androidx.core.content.res.ResourcesCompat;
-
-import java.util.ArrayList;
-
 
 public class Cards {
 
@@ -121,7 +117,6 @@ public class Cards {
         }
 
         public Cards build() {
-            //image.setBackgroundColor(R.color.light_theme);
             return new Cards(this);
         }
 

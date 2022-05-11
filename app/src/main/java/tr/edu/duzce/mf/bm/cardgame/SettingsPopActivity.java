@@ -21,10 +21,13 @@ public class SettingsPopActivity extends AppCompatActivity {
 
     private static Fragment fragment;
     public static View popView;
+    public static Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_pop);
+        context = this;
+
         DisplayMetrics dm=new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         int width=dm.widthPixels;
@@ -70,10 +73,10 @@ public class SettingsPopActivity extends AppCompatActivity {
                 finish();
             else if(fragment.getClass().equals(ListFragment.class))
                 callFragment(getSupportFragmentManager(), new SettingsFragment());
-            else
-                finish();
+            return true;
         }
-        return super.onKeyDown(keyCode, event);
+        else
+            return super.onKeyDown(keyCode, event);
     }
 
 }

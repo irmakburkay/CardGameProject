@@ -1,13 +1,9 @@
 package tr.edu.duzce.mf.bm.cardgame;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
-import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.SeekBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,10 +13,6 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SeekBarPreference;
 import androidx.preference.SwitchPreference;
 
-import com.google.android.material.snackbar.Snackbar;
-
-import java.util.ArrayList;
-import java.util.Locale;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 
@@ -129,8 +121,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 return true;
             }
         });
-        //dili değiştir!!!!
-        //snackbar
+
         language.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(@NonNull Preference preference, Object newValue) {

@@ -2,16 +2,13 @@ package tr.edu.duzce.mf.bm.cardgame;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.fragment.app.Fragment;
@@ -20,7 +17,6 @@ import androidx.fragment.app.FragmentManager;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -154,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
      *  <li><i>SettingsFragment</i></li>
      * </ul>
      *
-     * @param fragment
+     * @param fragment This is the fragment which wanted to pass.
      */
     public static void changeFragmentCondition(String fragment) {
         MainActivity.fragment = fragment;
@@ -209,8 +205,7 @@ public class MainActivity extends AppCompatActivity {
                 callFragment(getSupportFragmentManager(), new MainPageFragment());
             else if (f.getClass() == ScoreFragment.class)
                 callFragment(getSupportFragmentManager(), new MainPageFragment());
-            else
-                return super.onKeyDown(keyCode,event);
+            return true;
         }
         return super.onKeyDown(keyCode,event);
     }

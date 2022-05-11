@@ -45,6 +45,6 @@
     <string name="scoreSummary">Skorları listelemek için tuşa basın</string>
     <string name="scoreTitle">Skorlar</string>
     <string name="restart">Tekrar Başlat</string>
-    <string name="snackbarText">Yeniden başlatma gerekli</string>
+    <string name="restartMessage">Yeniden başlatma gerekli</string>
 
 </resources>

@@ -44,6 +44,6 @@
     <string name="scoreSummary">Click toggle to list scores</string>
     <string name="scoreTitle">Scores</string>
     <string name="restart">Restart</string>
-    <string name="snackbarText">Restart is required</string>
+    <string name="restartMessage">Restart is required</string>
 
 </resources>
